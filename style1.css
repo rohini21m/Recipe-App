@@ -42,6 +42,7 @@ body {
 }
 header,
 form {
+    margin-top: 10px;
   display: flex;
   flex-direction: column;
   height: 10vh;
@@ -49,7 +50,7 @@ form {
   justify-content: center;
   color: crimson;
 }
-header h2 {
+header  h2 {
   margin-top: 10px;
 }
 

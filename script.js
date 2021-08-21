@@ -64,18 +64,18 @@ function popUp(e) {
     console.log(meal);
     meal = meal[0];
     let html = ` <div class="meal-title" id="meal-title">
-                <h2>${meals.strMeal}</h2>
+                <h2>${meal.strMeal}</h2>
                   <div class="meal-img" id="meal-img">
-                   <img src="${meals.strMealThumb}"/>
+                   <img src="${meal.strMealThumb}"/>
                   </div>
                     <div class="meal-recipie-steps" id="meal-recipie-steps">
-                     <p class="category">${meals.strCategory}</p>
+                     <p class="category">${meal.strCategory}</p>
                       <h2>INSTRUCTIONS:</h2>
-                       <p>${meals.strInstructions}</p>
+                       <p>${meal.strInstructions}</p>
                     </div>
                   <div class="meal-video-link" id="meal-video-link">
                       <h3> Here the video link to the recipie. <i class="far fa-hand-point-down"></i></h3>
-                         <a href="${meals.strYoutube}">Recipe Video</a>
+                         <a href="${meal.strYoutube}">Recipe Video</a>
                   </div>
 </div>     
                    

@@ -42,6 +42,7 @@ body {
 }
 header,
 form {
+    margin-top: 10px;
   display: flex;
   flex-direction: column;
   height: 10vh;

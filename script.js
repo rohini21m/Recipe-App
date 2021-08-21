@@ -54,7 +54,7 @@ function popUp(e) {
     let mealItem = e.target.parentElement.parentElement; // gives element id number of the selected recipie.
 
     fetch(
-      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
+      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=52771`
     )
       .then((response) => response.json())
 

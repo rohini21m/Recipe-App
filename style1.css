@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vh;
+
+  display: block;
+}
+.container {
+  overflow: auto;
+  max-width: 1500px;
+}
+@media screen and (min-width: 600px) {
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .api-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-left: 70px;
+  }
+  .result {
+    margin: 0;
+  }
+  .modale {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .api-results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+header,
+form {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+header h2 {
+  margin-top: 10px;
+}
+
+form input,
+form button {
+  margin-top: 20px;
+  height: 7vh;
+  padding: 0 1rem;
+  border-color: black;
+  background: white;
+  font-size: 1.3em;
+  color: black;
+  border-radius: 10px;
+}
+form button {
+  margin-left: 230px;
+  position: absolute;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+form button :hover {
+  color: black;
+}
+
+#meal {
+  margin: 2rem;
+}
+
+.api-result {
+  height: 100%;
+
+  color: crimson;
+  margin: 1em;
+  font-size: 2rem;
+  text-align: justify;
+  display: flex;
+}
+
+.items {
+  margin-left: 50%;
+  margin: 2.4rem 2em;
+}
+.result {
+  margin: 3rem;
+  width: 50vh;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  margin: 2rem 2rem;
+}
+
+.meals-title {
+  margin: 1em 2em;
+  text-align: justify;
+  padding: 1em 2em;
+  font-size: 1em;
+  color: crimson;
+}
+.meals-title:hover {
+  color: chocolate;
+}
+.meals-img img {
+  width: 50vh;
+  display: block;
+}
+.recipe-btn {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: crimson;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  display: block;
+  width: 155px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.recipe-btn:hover {
+  background-color: tomato;
+  color: white;
+}
+.modale {
+  position: fixed;
+  display: none;
+  background-color: crimson;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 90%;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  border: white;
+}
+.modale::-webkit-scrollbar {
+  width: 10px;
+}
+.modale::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 2rem;
+}
+.showRecipe {
+  display: block;
+}
+
+.meal-data {
+  margin: 20px 10px;
+  padding: 0 10px;
+  display: block;
+
+  left: 50%;
+  top: 50%;
+
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  top: 3%;
+  right: 3rem;
+  border-radius: 10px;
+  width: 30px;
+  height: 40px;
+  font-size: 2rem;
+  text-align: center;
+}
+span:hover {
+  color: crimson;
+  background-color: white;
+}
+span:hover {
+  font-size: 2rem;
+}
+
+.meal-title {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 1em 1em;
+  padding: 0 1em;
+}
+.meal-img {
+  margin: 1em;
+  padding: 1em;
+
+  height: auto;
+}
+img {
+  min-width: auto;
+  height: 300px;
+}
+.meal-recipie-steps {
+  text-align: justify;
+  color: white;
+  margin: 0 0.5em;
+  padding: 1em 1em;
+}
+.fa-hand-point-down {
+  margin: 0.5em;
+  padding: 0em;
+  color: white;
+  font-size: 35px;
+  align-items: center;
+}
+.meal-video-link a {
+  margin-top: 2em;
+  text-align: left;
+  text-decoration-line: underline;
+  color: white;
+}
+
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: var(--tenne-tawny);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5765af88bb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <body>
+      <div class="container">
+        <header>
+          <h1>
+            <em
+              >"A recipie has no soul.You as a cook must bring the soul to the
+              recipie."</em
+            >
+          </h1>
+          <h2>
+            <em
+              >Search for your favourite dish recipie by ingredients here..</em
+            >
+          </h2>
+        </header>
+
+        <form>
+          <input type="text" id="text-input" placeholder="Enter the ingredient" />
+          <button class="search" id="search-input">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+
+        <div class="api-results" id="food">
+          <div class="items" id="meal"></div>
+        </div>
+        <div class="modale">
+          <span class="closebtn" id="close-btn">x</span>
+          <div class="meal-data" id="meal-data">
+            
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </head>
+</html>
